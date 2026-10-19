@@ -1,0 +1,546 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#080b13" />
+    <meta
+      name="description"
+      content="Guía de progresión de DivineLegacy para AION 2 Global. Elyos, servidor Kochi EU."
+    />
+    <title>DivineLegacy · Guía de AION 2</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+
+  <body>
+    <div class="reading-bar" aria-hidden="true">
+      <div class="reading-fill" id="readingFill"></div>
+    </div>
+
+    <header class="site-header">
+      <div class="wrap header-inner">
+        <a class="brand" href="#inicio" aria-label="DivineLegacy, inicio">
+          <span class="brand-crest" aria-hidden="true">
+            <svg viewBox="0 0 120 140" fill="none">
+              <path d="M60 5 108 25V68c0 31-19 52-48 67C31 120 12 99 12 68V25L60 5Z" />
+              <path d="M60 24 93 38V67c0 22-12 37-33 49C39 104 27 89 27 67V38L60 24Z" />
+              <path d="M60 39 66 59 86 60 70 73 76 93 60 81 44 93 50 73 34 60 54 59Z" />
+            </svg>
+          </span>
+          <span class="brand-copy">
+            <strong>DivineLegacy</strong>
+            <small>UNA LEGIÓN. UN PROPÓSITO.</small>
+          </span>
+        </a>
+
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          type="button"
+          aria-label="Abrir navegación"
+          aria-controls="mainNav"
+          aria-expanded="false"
+        >
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="main-nav" id="mainNav" aria-label="Navegación principal">
+          <a class="nav-link active" href="#inicio">Inicio</a>
+          <a class="nav-link" href="#progresion">Progresión</a>
+          <a class="nav-link" href="#rutina">Rutina</a>
+          <a class="nav-link" href="#tiendas">Tiendas</a>
+          <a class="nav-link" href="#glosario">Glosario</a>
+        </nav>
+
+        <div class="header-pills">
+          <span class="pill-badge"><span>✦</span> Elyos</span>
+          <span class="pill-badge"><span>◇</span> Kochi · EU</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- INICIO -->
+      <section class="hero-section" id="inicio">
+        <div class="hero-glow" aria-hidden="true"></div>
+        <div class="wrap hero-layout">
+          <div class="hero-main">
+            <p class="eyebrow"><span></span> ARCHIVO DE PROGRESIÓN · GLOBAL</p>
+            <h1>JUNTOS EN <span>ATREIA</span></h1>
+            <p class="hero-subtitle">
+              Una guía para los miembros de DivineLegacy: desde los
+              primeros pasos en Atreia hasta el contenido de nivel máximo.
+              Aprende qué priorizar, dónde invertir tus recursos y cómo avanzar
+              junto a la legión.
+            </p>
+
+            <div class="hero-actions">
+              <a class="btn btn-gold" href="#progresion">Explorar la ruta</a>
+              <a class="btn btn-outline" href="#rutina">Ver rutina diaria</a>
+            </div>
+
+            <div class="hero-features">
+              <div class="feature-item">
+                <span class="feature-icon">⚔</span>
+                <span>PROGRESAMOS JUNTOS</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">✧</span>
+                <span>COMPARTIMOS CONOCIMIENTO</span>
+              </div>
+              <div class="feature-item">
+                <span class="feature-icon">♜</span>
+                <span>AYUDAMOS A LA LEGIÓN</span>
+              </div>
+            </div>
+          </div>
+
+          <aside class="hero-banner-card" aria-label="Datos de la legión">
+            <div class="banner-top">
+              <span class="banner-symbol">✦</span>
+              <span>DivineLegacy</span>
+            </div>
+            <div class="banner-emblem" aria-hidden="true">
+              <svg viewBox="0 0 120 140" fill="none">
+                <path d="M60 5 108 25V68c0 31-19 52-48 67C31 120 12 99 12 68V25L60 5Z" />
+                <path d="M60 24 93 38V67c0 22-12 37-33 49C39 104 27 89 27 67V38L60 24Z" />
+                <path d="M60 39 66 59 86 60 70 73 76 93 60 81 44 93 50 73 34 60 54 59Z" />
+              </svg>
+            </div>
+            <div class="banner-motto">UNA LEGIÓN. UN PROPÓSITO.</div>
+            <div class="banner-data-list">
+              <div class="b-data"><span>Facción</span><strong>Elyos</strong></div>
+              <div class="b-data"><span>Servidor</span><strong>Kochi · EU</strong></div>
+              <div class="b-data"><span>Cap de temporada</span><strong>Nivel 45</strong></div>
+              <div class="b-data"><span>Enfoque</span><strong>Progresión PvE</strong></div>
+            </div>
+            <p class="banner-note">El conocimiento se comparte. La fuerza se construye juntos.</p>
+          </aside>
+        </div>
+      </section>
+
+      <!-- PROGRESIÓN -->
+      <section class="section" id="progresion">
+        <div class="wrap">
+          <header class="section-head">
+            <p class="kicker">EL CAMINO DEL DAEVA</p>
+            <h2>LA RUTA DE <span>PROGRESIÓN</span></h2>
+            <p class="lead">
+              Sigue las prioridades de cada etapa, conoce los desbloqueos
+              importantes y evita gastar recursos en mejoras que pronto
+              sustituirás.
+            </p>
+          </header>
+
+          <div class="phase-tabs" id="phaseTabs" role="tablist" aria-label="Fases de progresión">
+            <button class="tab-btn active" type="button" data-target="phaseEarly" role="tab" aria-selected="true">
+              <span class="tab-number">01</span>
+              <span class="tab-range">NIVEL 1–19</span>
+              <span class="tab-name">Early Game</span>
+            </button>
+            <button class="tab-btn" type="button" data-target="phaseMid" role="tab" aria-selected="false">
+              <span class="tab-number">02</span>
+              <span class="tab-range">NIVEL 20–29</span>
+              <span class="tab-name">Mid Game</span>
+            </button>
+            <button class="tab-btn" type="button" data-target="phaseLate" role="tab" aria-selected="false">
+              <span class="tab-number">03</span>
+              <span class="tab-range">NIVEL 30–44</span>
+              <span class="tab-name">Late Game</span>
+            </button>
+            <button class="tab-btn" type="button" data-target="phaseEnd" role="tab" aria-selected="false">
+              <span class="tab-number">04</span>
+              <span class="tab-range">NIVEL 45</span>
+              <span class="tab-name">Endgame</span>
+            </button>
+          </div>
+
+          <div class="phase-content-container">
+            <!-- FASE 1 -->
+            <article class="phase-pane active" id="phaseEarly" role="tabpanel">
+              <header class="pane-header">
+                <div>
+                  <p class="kicker">FASE 01 · FUNDAMENTOS</p>
+                  <h3>El despertar del Daeva</h3>
+                </div>
+                <span class="level-chip">Nivel 1–19</span>
+              </header>
+              <p class="pane-intro">
+                Tu objetivo es avanzar por la historia, desbloquear sistemas
+                básicos y aprender tu clase. No necesitas completar todo el
+                contenido secundario en cuanto aparece.
+              </p>
+
+              <div class="grid-2">
+                <div class="card">
+                  <h4 class="card-title success">✓ Qué priorizar</h4>
+                  <ol class="ordered-list">
+                    <li><strong>Sigue las misiones principales.</strong> Son la ruta base de experiencia y desbloqueos.</li>
+                    <li><strong>Haz contenido que encuentres de camino.</strong> Las mazmorras selladas, las fortalezas y las plumas que tengas cerca pueden aportar recursos y progreso adicional.</li>
+                    <li><strong>Desbloquea los sistemas básicos.</strong> Presta atención a las habilidades, las alas, la mejora de equipo, la recolección y la creación de objetos cuando estén disponibles.</li>
+                    <li><strong>Aprende tu clase.</strong> Familiarízate con la rotación, las habilidades defensivas y el movimiento.</li>
+                    <li><strong>Equipa las mejores piezas disponibles.</strong> Compara estadísticas y reemplaza equipo cuando encuentres una mejora real.</li>
+                  </ol>
+                </div>
+
+                <div class="card card-warning">
+                  <h4 class="card-title danger">✕ Errores que evitar</h4>
+                  <ul class="cross-list">
+                    <li>Perder tiempo farmeando monstruos sin necesidad cuando puedes avanzar con misiones.</li>
+                    <li>Invertir demasiados materiales en piezas que vas a sustituir pronto.</li>
+                    <li>Desviarte mucho de la historia por objetivos secundarios de poca utilidad inmediata.</li>
+                    <li>Ignorar las explicaciones de los nuevos sistemas y acumular recursos sin saber para qué sirven.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="info-strip">
+                <p><strong>Consejo de la legión:</strong> si la historia te bloquea por nivel o progreso de zona, completa objetivos secundarios cercanos antes de empezar a farmear por tu cuenta.</p>
+              </div>
+            </article>
+
+            <!-- FASE 2 -->
+            <article class="phase-pane" id="phaseMid" role="tabpanel" hidden>
+              <header class="pane-header">
+                <div>
+                  <p class="kicker">FASE 02 · ESPECIALIZACIÓN</p>
+                  <h3>Construye tu personaje</h3>
+                </div>
+                <span class="level-chip">Nivel 20–29</span>
+              </header>
+              <p class="pane-intro">
+                Empiezan a cobrar importancia las expediciones, la energía
+                Odyle y los sistemas de habilidades. Sigue progresando sin
+                descuidar los desbloqueos de tu clase.
+              </p>
+
+              <div class="grid-2">
+                <div class="card">
+                  <h4 class="card-title success">✓ Qué priorizar</h4>
+                  <ol class="ordered-list">
+                    <li><strong>Krao Cave · Nivel 20.</strong> Prueba la primera expedición y aprende sus mecánicas. Practica tu función en el grupo.</li>
+                    <li><strong>Ascensión y Estigmas.</strong> La misión de Ascensión alrededor del nivel 22 desbloquea sistemas importantes. Revisa los huecos disponibles y las habilidades que mejor encajan con tu clase.</li>
+                    <li><strong>Gestiona la energía Odyle.</strong> El limite es 560 si eres jugador gratuito o 840 si eres miembro y al dia se regenera 15 cada 3 horas. Intenta no dejar que se acumule al máximo si tienes recompensas útiles que reclamar.</li>
+                    <li><strong>Desarrolla los tableros Daevanion.</strong> Invierte los puntos con un objetivo claro y consulta una configuración adecuada para tu clase.</li>
+                    <li><strong>Continúa la historia.</strong> En torno a los niveles 22 y 32 pueden aparecer bloqueos de progreso que requieren avanzar en sistemas o contenido secundario.</li>
+                  </ol>
+                </div>
+
+                <div class="card card-warning">
+                  <h4 class="card-title danger">✕ Errores que evitar</h4>
+                  <ul class="cross-list">
+                    <li>Gastar energía Odyle sin valorar qué recompensa necesitas.</li>
+                    <li>Repartir materiales de Estigma entre habilidades que no utilizas.</li>
+                    <li>Copiar una configuración sin comprender qué estadísticas o habilidades prioriza.</li>
+                    <li>Ignorar las misiones regionales si necesitas completar el progreso de zona para continuar.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="info-strip">
+                <span class="info-icon">✦</span>
+                <p><strong>Consejo de la legión:</strong> pregunta antes de gastar materiales difíciles de conseguir. Una recomendación adaptada a tu clase puede ahorrarte muchos recursos.</p>
+              </div>
+            </article>
+
+            <!-- FASE 3 -->
+            <article class="phase-pane" id="phaseLate" role="tabpanel" hidden>
+              <header class="pane-header">
+                <div>
+                  <p class="kicker">FASE 03 · PREPARACIÓN</p>
+                  <h3>Prepara el salto al nivel máximo</h3>
+                </div>
+                <span class="level-chip">Nivel 30–44</span>
+              </header>
+              <p class="pane-intro">
+                Aprovecha las nuevas actividades, completa los desbloqueos de
+                habilidades y prepara tu inventario para la transición al
+                contenido de nivel 45.
+              </p>
+
+              <div class="grid-2">
+                <div class="card">
+                  <h4 class="card-title success">✓ Qué priorizar</h4>
+                  <ol class="ordered-list">
+                    <li><strong>Mazmorra diaria · Nivel 30.</strong> Revisa el contador de entradas y utiliza las disponibles antes del reinicio semanal.</li>
+                    <li><strong>Urugugu Canyon · Nivel 28.</strong> Familiarízate con esta expedición y aprende sus mecánicas.</li>
+                    <li><strong>Fire Temple · Nivel 35.</strong> Practica el combate en grupo y coordina las expediciones con otros miembros.</li>
+                    <li><strong>Misiones regionales y objetivos secundarios.</strong> Complétalos cuando necesites experiencia, recursos o puntos de habilidad.</li>
+                    <li><strong>Mejora el equipo con criterio.</strong> Refuerza piezas que vayas a mantener y evita consumir materiales caros en mejoras marginales.</li>
+                    <li><strong>Prepara tu configuración.</strong> Revisa habilidades, Estigmas, tableros y consumibles antes de llegar al nivel máximo.</li>
+                  </ol>
+                </div>
+
+                <div class="card card-warning">
+                  <h4 class="card-title danger">✕ Errores que evitar</h4>
+                  <ul class="cross-list">
+                    <li>Olvidarte de las entradas semanales de la mazmorra diaria.</li>
+                    <li>Mejorar piezas de forma automática sin comparar su utilidad con el coste.</li>
+                    <li>Llegar al nivel 45 sin conocer los sistemas básicos de tu clase.</li>
+                    <li>Asumir que una entrada gratuita y una recompensa reclamable funcionan siempre con el mismo contador.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="info-strip">
+                <span class="info-icon">✦</span>
+                <p><strong>Consejo de la legión:</strong> no necesitas tener un equipo perfecto antes del 45. El objetivo es llegar preparado y empezar a progresar con las actividades de nivel máximo.</p>
+              </div>
+            </article>
+
+            <!-- FASE 4 -->
+            <article class="phase-pane" id="phaseEnd" role="tabpanel" hidden>
+              <header class="pane-header">
+                <div>
+                  <p class="kicker">FASE 04 · NIVEL MÁXIMO</p>
+                  <h3>El camino del Endgame</h3>
+                </div>
+                <span class="level-chip">Nivel 45</span>
+              </header>
+              <p class="pane-intro">
+                Al alcanzar el nivel máximo, el foco pasa de la experiencia al
+                nivel de objeto, la optimización de la configuración y el
+                aprovechamiento de las actividades diarias y semanales.
+              </p>
+
+              <div class="milestones">
+                <div class="milestone">
+                  <span class="milestone-number">01</span>
+                  <div><strong>Completa los desbloqueos</strong><p>Revisa misiones principales, regionales y sistemas pendientes.</p></div>
+                </div>
+                <div class="milestone">
+                  <span class="milestone-number">02</span>
+                  <div><strong>Empieza por el Conquest accesible</strong><p>Usa tu nivel de objeto actual para identificar qué expediciones puedes completar.</p></div>
+                </div>
+                <div class="milestone">
+                  <span class="milestone-number">03</span>
+                  <div><strong>Mejora tu equipo de forma progresiva</strong><p>Sustituye las piezas débiles y mejora las que aporten valor a tu configuración.</p></div>
+                </div>
+                <div class="milestone">
+                  <span class="milestone-number">04</span>
+                  <div><strong>Desbloquea actividades avanzadas</strong><p>Incorpora Pesadilla, Trial Ascension y Trascendencia según sus requisitos y tus entradas.</p></div>
+                </div>
+                <div class="milestone">
+                  <span class="milestone-number">05</span>
+                  <div><strong>Únete al contenido de legión</strong><p>Coordina expediciones, actividades del Abismo y objetivos PvP cuando estés preparado.</p></div>
+                </div>
+              </div>
+
+              <div class="table-wrap">
+                <table class="progress-table">
+                  <thead><tr><th>Nivel de objeto</th><th>Objetivo de progresión</th><th>Prioridad</th></tr></thead>
+                  <tbody>
+                    <tr><td>700</td><td>Primer escalón de Conquest</td><td><span class="status-tag">Comenzar</span></td></tr>
+                    <tr><td>1.400</td><td>Siguiente escalón de Conquest</td><td><span class="status-tag">Progresar</span></td></tr>
+                    <tr><td>1.600</td><td>Requisito de referencia para Trascendencia</td><td><span class="status-tag">Desbloquear</span></td></tr>
+                    <tr><td>2.100+</td><td>Contenido de expedición más exigente</td><td><span class="status-tag">Optimizar</span></td></tr>
+                  </tbody>
+                </table>
+              </div>
+              <p class="small-note">
+                Los requisitos dependen del modo y de la instancia. Comprueba
+                siempre el nivel de objeto requerido en el menú del juego antes
+                de organizar el grupo.
+              </p>
+
+              <div class="grid-2">
+                <div class="card">
+                  <h4 class="card-title success">✓ Prioridades de Endgame</h4>
+                  <ul class="check-list-static">
+                    <li>Completar las actividades con entradas limitadas.</li>
+                    <li>Gastar Odyle cuando tengas una recompensa útil que reclamar.</li>
+                    <li>Mejorar primero las piezas que más necesita tu personaje.</li>
+                    <li>Revisar Estigmas, tableros, Arcanas y títulos.</li>
+                    <li>Coordinar el contenido de grupo con la legión.</li>
+                  </ul>
+                </div>
+                <div class="card card-warning">
+                  <h4 class="card-title danger">✕ Errores de Endgame</h4>
+                  <ul class="cross-list">
+                    <li>Dejar que se acumulen recursos regenerables hasta su límite.</li>
+                    <li>Gastar Kina libre en compras que puedes pagar con Kina ligado.</li>
+                    <li>Mejorar equipo sin revisar los costes y las alternativas.</li>
+                    <li>Confundir requisitos de nivel de personaje con nivel de objeto.</li>
+                    <li>Dejar pasar reinicios semanales sin comprobar las entradas restantes.</li>
+                  </ul>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- RUTINA -->
+      <section class="section section-alt" id="rutina">
+        <div class="wrap">
+          <header class="section-head">
+            <p class="kicker">DISCIPLINA DEL DAEVA</p>
+            <h2>RUTINA <span>DIARIA Y SEMANAL</span></h2>
+            <p class="lead">
+              Una lista de control para organizar el contenido de nivel máximo.
+              Marca las tareas completadas; el navegador recordará tu progreso.
+            </p>
+          </header>
+
+          <div class="grid-2">
+            <section class="card checklist-card">
+              <div class="card-heading">
+                <span class="heading-icon">☀</span>
+                <div><h3>Todos los días</h3><p>Prioridades que conviene revisar a diario.</p></div>
+              </div>
+              <ul class="checklist" id="dailyChecklist">
+                <li><label><span>Completar las Duty Missions disponibles.</span></label></li>
+                <li><label><span>Revisar y gastar Odyle si hay recompensas útiles.</span></label></li>
+                <li><label><span>Completar Pesadilla según las entradas disponibles.</span></label></li>
+                <li><label><span>Revisar misiones, objetivos regionales y eventos activos.</span></label></li>
+                <li><label><span>Comprobar actividades del Abismo o grupos de legión.</span></label></li>
+              </ul>
+            </section>
+
+            <section class="card checklist-card">
+              <div class="card-heading">
+                <span class="heading-icon">⌛</span>
+                <div><h3>Antes del reset semanal</h3><p>Comprueba el contador del juego antes del reinicio.</p></div>
+              </div>
+              <ul class="checklist" id="weeklyChecklist">
+                <li><label><span>Usar las entradas semanales que vayan a caducar.</span></label></li>
+                <li><label><span>Revisar los intentos de Trial Ascension y Trascendencia.</span></label></li>
+                <li><label><span>Gastar monedas de evento que estén a punto de caducar.</span></label></li>
+                <li><label><span>Consultar las compras disponibles del mercader de legión.</span></label></li>
+                <li><label><span>Organizar expediciones y actividades con el grupo.</span></label></li>
+              </ul>
+            </section>
+          </div>
+
+          <p class="small-note">Las entradas, horarios y reinicios pueden variar por actividad o actualización.</p>
+        </div>
+      </section>
+
+      <!-- TIENDAS -->
+      <section class="section" id="tiendas">
+        <div class="wrap">
+          <header class="section-head">
+            <p class="kicker">ADMINISTRACIÓN DE RECURSOS</p>
+            <h2>TIENDAS Y <span>PRIORIDADES</span></h2>
+            <p class="lead">
+              Una orientación de compra para aprovechar las monedas y evitar
+              gastar recursos valiosos en objetos de poca utilidad inmediata.
+            </p>
+          </header>
+
+          <div class="grid-3">
+            <article class="card shop-card">
+              <span class="shop-category">LEGIÓN</span>
+              <div class="shop-icon">♜</div>
+              <h3>Mercader de Legión</h3>
+              <p class="shop-currency">Moneda: según el objeto y la tienda</p>
+              <ol class="shop-list">
+                <li><span>01</span><div><strong>Objetos útiles para actividades de grupo</strong><p>Comprueba los objetos disponibles y sus requisitos.</p></div></li>
+                <li><span>02</span><div><strong>Consumibles necesarios</strong><p>Prioriza lo que utilizas con frecuencia y puedes conseguir a buen precio.</p></div></li>
+                <li><span>03</span><div><strong>Objetos de utilidad táctica</strong><p>Revisa los Kisk y otros objetos si están disponibles para tu actividad.</p></div></li>
+              </ol>
+            </article>
+
+            <article class="card shop-card">
+              <span class="shop-category">EVENTOS Y PvE</span>
+              <div class="shop-icon">✧</div>
+              <h3>Eventos y recompensas</h3>
+              <p class="shop-currency">Moneda: depende del evento</p>
+              <ol class="shop-list">
+                <li><span>01</span><div><strong>Materiales de progresión</strong><p>Valora los recursos que necesitas para habilidades y equipo.</p></div></li>
+                <li><span>02</span><div><strong>Puntos de habilidad</strong><p>Comprueba las fuentes disponibles de Piedras de Sabiduría.</p></div></li>
+                <li><span>03</span><div><strong>Objetos limitados</strong><p>Prioriza recompensas difíciles de obtener por otros medios.</p></div></li>
+              </ol>
+            </article>
+
+            <article class="card shop-card">
+              <span class="shop-category">ABISMO · PvP</span>
+              <div class="shop-icon">⚔</div>
+              <h3>Tienda del Abismo</h3>
+              <p class="shop-currency">Moneda: Puntos de Abismo (AP)</p>
+              <ol class="shop-list">
+                <li><span>01</span><div><strong>Mejoras específicas</strong><p>Compara los requisitos y el coste antes de gastar AP.</p></div></li>
+                <li><span>02</span><div><strong>Objetos de colección</strong><p>Valora las bonificaciones permanentes si están disponibles en tu versión.</p></div></li>
+              </ol>
+            </article>
+          </div>
+
+          <div class="info-strip">
+            <p><strong>Importante:</strong> las tiendas y sus inventarios pueden cambiar por parche o temporada. Esta sección es una lista de prioridades, no una garantía de que todos los objetos estén disponibles actualmente.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- GLOSARIO -->
+      <section class="section section-alt" id="glosario">
+        <div class="wrap">
+          <header class="section-head">
+            <p class="kicker">LENGUAJE COMÚN</p>
+            <h2>GLOSARIO <span>DEL DAEVA</span></h2>
+            <p class="lead">
+              Términos habituales en guías en inglés, el chat del servidor y
+              las comunicaciones de grupo.
+            </p>
+          </header>
+
+          <div class="glossary-wrapper">
+            <label class="search-label" for="gloSearch">Buscar un término</label>
+            <div class="glossary-search-bar">
+              <span aria-hidden="true">⌕</span>
+              <input
+                type="search"
+                id="gloSearch"
+                placeholder="Ej.: Odyle, Stigma, AP, Conquest..."
+                autocomplete="off"
+              />
+              <button id="clearSearch" type="button" aria-label="Limpiar búsqueda">×</button>
+            </div>
+            <p class="glossary-count" id="glossaryCount" aria-live="polite"></p>
+            <div class="glossary-grid" id="gloGrid">
+              <!-- Los términos se cargan desde script.js -->
+            </div>
+            <p class="empty-state" id="glossaryEmpty" hidden>No se han encontrado términos. Prueba con otra búsqueda.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- FUENTES -->
+      <section class="section sources-section" id="fuentes">
+        <div class="wrap">
+          <header class="section-head">
+            <p class="kicker">DOCUMENTACIÓN</p>
+            <h2>FUENTES Y <span>REFERENCIAS</span></h2>
+            <p class="lead">Recursos comunitarios utilizados como punto de partida.</p>
+          </header>
+          <div class="source-list">
+            <a href="https://legaeon.co.uk/guides/levelling.html" target="_blank" rel="noopener noreferrer">
+              <span><strong>Leveling Guide 1–45</strong><small>Ruta de misiones y progresión inicial</small></span><span>↗</span>
+            </a>
+            <a href="https://aion2.vi.ki/dungeons" target="_blank" rel="noopener noreferrer">
+              <span><strong>AION 2 · Dungeon Guide</strong><small>Expediciones y tipos de mazmorra</small></span><span>↗</span>
+            </a>
+            <a href="https://aion2maps.com/guides/daily-and-weekly/" target="_blank" rel="noopener noreferrer">
+              <span><strong>Daily & Weekly Checklist</strong><small>Actividades diarias y semanales</small></span><span>↗</span>
+            </a>
+          </div>
+          <p class="small-note">Guía comunitaria no oficial de DivineLegacy. AION 2 y sus marcas pertenecen a sus respectivos titulares. Los nombres, sistemas y requisitos pueden cambiar con futuras actualizaciones.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="footer-brand" href="#inicio">DIVINELEGACY</a>
+      <p>Juntos en Atreia.</p>
+      <div class="footer-meta">AION 2 · ELYOS · KOCHI EU</div>
+      <a href="#inicio" class="back-top">Volver arriba ↑</a>
+    </footer>
+  </body>
+</html>
